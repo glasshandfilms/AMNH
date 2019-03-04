@@ -9,16 +9,17 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FurStripeMat
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BLENDMODE_ALPHA _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT
-    _NORMALMAP _NORMALMAP_TANGENT_SPACE _SURFACE_TYPE_TRANSPARENT
+  m_ShaderKeywords: _BLENDMODE_ALPHA _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT _NORMALMAP
+    _NORMALMAP_TANGENT_SPACE _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 3003
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
   - DistortionVectors
+  - TransparentDepthPrepass
   - TransparentDepthPostpass
   - MOTIONVECTORS
   m_SavedProperties:
@@ -113,8 +114,8 @@ Material:
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AlbedoAffectEmissive: 0
-    - _AlphaCutoff: 0.043
-    - _AlphaCutoffEnable: 1
+    - _AlphaCutoff: 0.106
+    - _AlphaCutoffEnable: 0
     - _AlphaCutoffPostpass: 0.5
     - _AlphaCutoffPrepass: 0.86
     - _Anisotropy: 0
@@ -122,12 +123,12 @@ Material:
     - _CoatMask: 0
     - _CullMode: 0
     - _CullModeForward: 2
-    - _Cutoff: 0.043
+    - _Cutoff: 0.106
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
-    - _DiffusionProfile: 0
+    - _DiffusionProfile: 2
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -209,13 +210,13 @@ Material:
     - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 1
     - _TransparentDepthPostpassEnable: 0
-    - _TransparentDepthPrepassEnable: 1
-    - _TransparentSortPriority: 0
+    - _TransparentDepthPrepassEnable: 0
+    - _TransparentSortPriority: 3
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
     - _ZTestDepthEqualForOpaque: 4
-    - _ZTestGBuffer: 3
+    - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
     - _ZWrite: 0
     m_Colors:

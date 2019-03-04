@@ -9,16 +9,17 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FurMiddleMat
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _BLENDMODE_ALPHA _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT
-    _NORMALMAP _NORMALMAP_TANGENT_SPACE _SURFACE_TYPE_TRANSPARENT
+  m_ShaderKeywords: _BLENDMODE_ALPHA _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT _NORMALMAP
+    _NORMALMAP_TANGENT_SPACE _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 3002
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
   - DistortionVectors
+  - TransparentDepthPrepass
   - TransparentDepthPostpass
   - MOTIONVECTORS
   m_SavedProperties:
@@ -113,21 +114,21 @@ Material:
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AlbedoAffectEmissive: 0
-    - _AlphaCutoff: 0.204
-    - _AlphaCutoffEnable: 1
+    - _AlphaCutoff: 0.299
+    - _AlphaCutoffEnable: 0
     - _AlphaCutoffPostpass: 0.5
-    - _AlphaCutoffPrepass: 0.97
+    - _AlphaCutoffPrepass: 1
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
     - _CullMode: 0
     - _CullModeForward: 2
-    - _Cutoff: 0.204
+    - _Cutoff: 0.299
     - _DepthOffsetEnable: 0
     - _DetailAlbedoScale: 1
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
-    - _DiffusionProfile: 0
+    - _DiffusionProfile: 2
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -209,18 +210,18 @@ Material:
     - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 1
     - _TransparentDepthPostpassEnable: 0
-    - _TransparentDepthPrepassEnable: 1
-    - _TransparentSortPriority: 0
+    - _TransparentDepthPrepassEnable: 0
+    - _TransparentSortPriority: 2
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
     - _ZTestDepthEqualForOpaque: 4
-    - _ZTestGBuffer: 3
+    - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.46226418, g: 0.34550878, b: 0.25947848, a: 1}
-    - _Color: {r: 0.46226412, g: 0.34550875, b: 0.25947845, a: 1}
+    - _BaseColor: {r: 0.38679248, g: 0.2636392, b: 0.17332682, a: 1}
+    - _Color: {r: 0.38679245, g: 0.26363918, b: 0.17332679, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
