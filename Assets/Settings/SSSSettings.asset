@@ -15,10 +15,10 @@ MonoBehaviour:
   profiles:
   - name: Skin
     scatteringDistance: {r: 0.7568628, g: 0.32156864, b: 0.20000002, a: 1}
-    transmissionTint: {r: 1.5135782, g: 0.64980847, b: 0.40414914, a: 1}
+    transmissionTint: {r: 0.46107566, g: 0.20036273, b: 0.123114444, a: 1}
     texturingMode: 0
     transmissionMode: 0
-    thicknessRemap: {x: 0, y: 38.983105}
+    thicknessRemap: {x: 0, y: 50}
     worldScale: 1
     ior: 1.442
   - name: Foliage
@@ -33,10 +33,10 @@ MonoBehaviour:
     scatteringDistance: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     transmissionTint: {r: 1, g: 1, b: 1, a: 1}
     texturingMode: 0
-    transmissionMode: 0
-    thicknessRemap: {x: 0, y: 5}
+    transmissionMode: 1
+    thicknessRemap: {x: 0, y: 50}
     worldScale: 1
-    ior: 1.4
+    ior: 1.168
   - name: Profile 4
     scatteringDistance: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     transmissionTint: {r: 1, g: 1, b: 1, a: 1}
